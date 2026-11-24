@@ -1,0 +1,521 @@
+{
+ "summary": {
+  "answerable_queries": 20,
+  "unanswerable_queries": 6,
+  "rag_fact_recall": 0.75,
+  "llm_only_fact_recall": 0.1,
+  "rag_source_hit_rate": 0.95,
+  "rag_false_abstention_rate": 0.1,
+  "rag_abstains_on_unanswerable": 0.8333333333333334,
+  "llm_only_abstains_on_unanswerable": 0.16666666666666666,
+  "rag_mean_seconds": 9.959986450007328,
+  "llm_only_mean_seconds": 11.248171615387456
+ },
+ "per_query": [
+  {
+   "id": "q01",
+   "type": "lexical",
+   "query": "How long is the Harbor Line railway and how fast do its trains run?",
+   "rag_answer": "The Harbor Line railway is 312 kilometers long, and its trains run at a speed of 300 km/h. [1]",
+   "llm_answer": "The Harbor Line railway is approximately 4.5 miles (7.2 kilometers) long and operates at a speed of up to 60 miles per hour (97 kilometers per hour).",
+   "rag_abstained": false,
+   "llm_abstained": false,
+   "rag_seconds": 4.694119099993259,
+   "llm_seconds": 5.870965700014494,
+   "sources": [
+    "doc-001",
+    "doc-003",
+    "doc-004",
+    "doc-034"
+   ],
+   "rag_fact_recall": 1.0,
+   "llm_fact_recall": 0.0,
+   "source_hit": true
+  },
+  {
+   "id": "q02",
+   "type": "lexical",
+   "query": "How much did the Port Calder dock strike cost exporters?",
+   "rag_answer": "The Port Calder dock strike cost exporters an estimated 600 million marks [1].",
+   "llm_answer": "I'm not aware of any information about a Port Calder dock strike affecting exporters. However, I can suggest that the Port of Dover, which is located near Port Calder, has experienced dock strikes in the past, and these strikes have had an impact on the port's operations and the economy of the region. If you're referring to a specific strike, I'd be happy to try and provide more information.",
+   "rag_abstained": false,
+   "llm_abstained": true,
+   "rag_seconds": 9.512732499977574,
+   "llm_seconds": 23.388567800051533,
+   "sources": [
+    "doc-013",
+    "doc-034",
+    "doc-001",
+    "doc-002"
+   ],
+   "rag_fact_recall": 1.0,
+   "llm_fact_recall": 0.0,
+   "source_hit": true
+  },
+  {
+   "id": "q03",
+   "type": "lexical",
+   "query": "What interest rate did the central bank set?",
+   "rag_answer": "The central bank set an interest rate of 3.75 percent [1].",
+   "llm_answer": "I'm not aware of any specific information about a central bank setting an interest rate. Can you provide more context or details about the central bank you are referring to?",
+   "rag_abstained": false,
+   "llm_abstained": true,
+   "rag_seconds": 10.321114799939096,
+   "llm_seconds": 5.38964140007738,
+   "sources": [
+    "doc-012",
+    "doc-011",
+    "doc-015",
+    "doc-014"
+   ],
+   "rag_fact_recall": 1.0,
+   "llm_fact_recall": 0.0,
+   "source_hit": true
+  },
+  {
+   "id": "q04",
+   "type": "lexical",
+   "query": "Who won the Verne marathon and in what time?",
+   "rag_answer": "Ilsa Berg won the Verne marathon in 2 hours 17 minutes 40 seconds, breaking the course record by 74 seconds [1].",
+   "llm_answer": "The 2022 Verne marathon was won by Yuki Kawauchi of Japan, who completed the 42.195 km course in 2 hours, 35 minutes, and 35 seconds.",
+   "rag_abstained": false,
+   "llm_abstained": false,
+   "rag_seconds": 6.94183929997962,
+   "llm_seconds": 6.396886500064284,
+   "sources": [
+    "doc-031",
+    "doc-010",
+    "doc-005",
+    "doc-004"
+   ],
+   "rag_fact_recall": 1.0,
+   "llm_fact_recall": 0.0,
+   "source_hit": true
+  },
+  {
+   "id": "q05",
+   "type": "lexical",
+   "query": "What caused the Lindor plane crash?",
+   "rag_answer": "The Lindor plane crash was caused by a fatigue crack in the left engine turbine, which led to the aircraft losing power seconds after take-off and striking a field 900 metres from the runway. [1]",
+   "llm_answer": "The Lindbergh plane crash, which occurred on May 21, 1932, was caused by a combination of factors, including a faulty rivet that held the starboard wing's horizontal stabilizer in place, a loose rivet that caused the wing to flex, and a lack of proper maintenance and inspection by the aircraft's owner, Charles Lindbergh.",
+   "rag_abstained": false,
+   "llm_abstained": false,
+   "rag_seconds": 8.680608100024983,
+   "llm_seconds": 10.836415499914438,
+   "sources": [
+    "doc-006",
+    "doc-008",
+    "doc-039",
+    "doc-007"
+   ],
+   "rag_fact_recall": 1.0,
+   "llm_fact_recall": 0.0,
+   "source_hit": true
+  },
+  {
+   "id": "q06",
+   "type": "lexical",
+   "query": "How many customers were affected by the Veltra data breach?",
+   "rag_answer": "According to Article 1, 2.3 million customers were affected by the Veltra data breach. [1]",
+   "llm_answer": "I can't provide information on the number of customers affected by the Veltra data breach. If you're looking for general information on data breaches or cybersecurity, I'd be happy to help with that.",
+   "rag_abstained": false,
+   "llm_abstained": true,
+   "rag_seconds": 10.69993160001468,
+   "llm_seconds": 12.453124599996954,
+   "sources": [
+    "doc-028",
+    "doc-019",
+    "doc-015",
+    "doc-006"
+   ],
+   "rag_fact_recall": 1.0,
+   "llm_fact_recall": 0.0,
+   "source_hit": true
+  },
+  {
+   "id": "q07",
+   "type": "lexical",
+   "query": "What is lorexin?",
+   "rag_answer": "The article [1] does not provide information on what lorexin is. It only mentions that researchers at the Calder Institute reported a new antibiotic, named lorexin, that destroyed drug-resistant staphylococcus bacteria in laboratory and mouse tests.",
+   "llm_answer": "Lorexin is a protein that plays a crucial role in regulating the sleep-wake cycle, also known as the circadian rhythm. It is produced by the suprachiasmatic nucleus, a small group of cells in the hypothalamus that acts as the master biological clock. In the brain, lorexin helps to synchronize the body's physiological processes with the 24-hour day-night cycle, allowing us to feel alert and awake during the day and relax at night.",
+   "rag_abstained": false,
+   "llm_abstained": false,
+   "rag_seconds": 14.094243600033224,
+   "llm_seconds": 13.645852699992247,
+   "sources": [
+    "doc-023",
+    "doc-027",
+    "doc-005",
+    "doc-006"
+   ],
+   "rag_fact_recall": 1.0,
+   "llm_fact_recall": 0.0,
+   "source_hit": true
+  },
+  {
+   "id": "q08",
+   "type": "lexical",
+   "query": "Which company is merging with Meridian Jet?",
+   "rag_answer": "Skyward Air and Meridian Jet are merging [1].",
+   "llm_answer": "I'm not aware of any recent news or announcements about a company merging with Meridian Jet. However, I can suggest some possible sources where you may be able to find the information you're looking for, such as company press releases or industry news websites. If you have any more specific information or context about the merger, I may be able to help you better.",
+   "rag_abstained": false,
+   "llm_abstained": true,
+   "rag_seconds": 4.4667587000876665,
+   "llm_seconds": 10.698091399972327,
+   "sources": [
+    "doc-007",
+    "doc-009",
+    "doc-001",
+    "doc-005"
+   ],
+   "rag_fact_recall": 1.0,
+   "llm_fact_recall": 0.0,
+   "source_hit": true
+  },
+  {
+   "id": "q09",
+   "type": "paraphrase",
+   "query": "Which new trains connect the coast with the inland city in under two hours?",
+   "rag_answer": "The new trains that connect the coast with the inland city in under two hours are the commuter trains in the Calder region, which ran 23 percent fewer late services after the rail authority switched on a digital signalling system, according to article [2].",
+   "llm_answer": "The new trains that connect the coast with the inland city in under two hours are the high-speed trains that run on the East Coast Main Line, which connects London's St Pancras International station to the inland city of Birmingham New Street station. These trains are operated by Virgin Trains East Coast and feature speeds of up to 125 miles per hour. The journey from London's St Pancras International to Birmingham New Street typically takes around 1 hour and 45 minutes.",
+   "rag_abstained": false,
+   "llm_abstained": false,
+   "rag_seconds": 8.046827599988319,
+   "llm_seconds": 12.819258200004697,
+   "sources": [
+    "doc-001",
+    "doc-003",
+    "doc-004",
+    "doc-005"
+   ],
+   "rag_fact_recall": 0.0,
+   "llm_fact_recall": 0.0,
+   "source_hit": true
+  },
+  {
+   "id": "q10",
+   "type": "paraphrase",
+   "query": "Why could nobody fly out of the harbour city one Saturday night?",
+   "rag_answer": "According to Article 2, the Harbor Line high-speed railway opened to passengers on Monday, but the article does not mention anything about a Port Calder harbour city. It actually mentions Port Calder airport, which was the location of the drone sightings.",
+   "llm_answer": "The harbour city was experiencing a severe storm that night, with strong winds and heavy rain causing the harbour to be severely flooded and the sea to be choppy. The harbour was also home to a large number of boats and ships, which were all being tossed about by the storm. As a result, it was not safe for anyone to attempt to fly out of the harbour, and the authorities were forced to close the city to all traffic and prevent any further accidents.",
+   "rag_abstained": true,
+   "llm_abstained": false,
+   "rag_seconds": 18.78766779997386,
+   "llm_seconds": 18.099946499918588,
+   "sources": [
+    "doc-008",
+    "doc-001",
+    "doc-013",
+    "doc-010"
+   ],
+   "rag_fact_recall": 1.0,
+   "llm_fact_recall": 0.0,
+   "source_hit": true
+  },
+  {
+   "id": "q11",
+   "type": "paraphrase",
+   "query": "Is the cost of living still rising as quickly as before?",
+   "rag_answer": "Based on the articles, it appears that the cost of living is still rising, but at a slower rate than in the past. According to article [1], the average house price rose 7% over the past year, while rents increased 9%. Additionally, article [2] reports that food prices rose only 2.4% in January, indicating a slower rate of inflation compared to previous years.\n\n[1] [1]",
+   "llm_answer": "The cost of living has been increasing, but at a slower pace than in previous years. According to data, the rate of inflation has slowed down significantly since 2020, with the Consumer Price Index (CPI) rising by around 3-4% in 2022, compared to 10-15% in 2020. However, the pace of price growth is expected to pick up again in the coming years.",
+   "rag_abstained": false,
+   "llm_abstained": false,
+   "rag_seconds": 15.176170599996112,
+   "llm_seconds": 11.886184600065462,
+   "sources": [
+    "doc-015",
+    "doc-011",
+    "doc-014",
+    "doc-012"
+   ],
+   "rag_fact_recall": 0.0,
+   "llm_fact_recall": 0.0,
+   "source_hit": true
+  },
+  {
+   "id": "q12",
+   "type": "paraphrase",
+   "query": "What measures protected the town from the swollen river?",
+   "rag_answer": "According to Article [1], the 90-million-mark barrier system was tested for the first time to protect the town of Marlow from the swollen river Orsa. The barrier system was finished last year, but it was not used to protect the town. The river Orsa rose 5.8 metres above normal after days of heavy rain, and about 3,000 residents were evacuated as a precaution.",
+   "llm_answer": "The town was protected from the swollen river by a series of levees and dams built by the local authorities. These structures helped to divert the water away from the town and prevent it from overflowing. The levees and dams also provided a safe and stable water level, allowing the town to thrive despite the challenging river conditions.",
+   "rag_abstained": false,
+   "llm_abstained": false,
+   "rag_seconds": 28.152997800032608,
+   "llm_seconds": 9.540956999990158,
+   "sources": [
+    "doc-019",
+    "doc-001",
+    "doc-040",
+    "doc-024"
+   ],
+   "rag_fact_recall": 1.0,
+   "llm_fact_recall": 0.0,
+   "source_hit": true
+  },
+  {
+   "id": "q13",
+   "type": "paraphrase",
+   "query": "Has a jab for a tropical disease been tested on kids?",
+   "rag_answer": "According to Article [1], the malaria vaccine trial tested 4,800 children. [1]",
+   "llm_answer": "Yes, the Centers for Disease Control and Prevention (CDC) has conducted studies on the safety and efficacy of a vaccine against dengue fever, a tropical disease transmitted by mosquitoes, in children. The vaccine has undergone rigorous testing and has shown promising results in preventing severe disease and reducing the risk of long-term complications. However, more research is needed to fully understand its safety and effectiveness in children.",
+   "rag_abstained": false,
+   "llm_abstained": false,
+   "rag_seconds": 5.583980199997313,
+   "llm_seconds": 11.502632300020196,
+   "sources": [
+    "doc-021",
+    "doc-023",
+    "doc-033",
+    "doc-025"
+   ],
+   "rag_fact_recall": 0.0,
+   "llm_fact_recall": 0.0,
+   "source_hit": true
+  },
+  {
+   "id": "q14",
+   "type": "paraphrase",
+   "query": "Which athlete was suspended for taking a prohibited substance?",
+   "rag_answer": "According to Article 1, Dario Lenz, a sprinter, was banned for four years after a sample taken before the national championships tested positive for a banned steroid. [1]",
+   "llm_answer": "I can't provide information on specific athletes or their suspensions without more context. Is there anything else I can help you with?",
+   "rag_abstained": false,
+   "llm_abstained": true,
+   "rag_seconds": 14.45472699997481,
+   "llm_seconds": 8.715662400005385,
+   "sources": [
+    "doc-033",
+    "doc-008",
+    "doc-006",
+    "doc-025"
+   ],
+   "rag_fact_recall": 1.0,
+   "llm_fact_recall": 0.0,
+   "source_hit": true
+  },
+  {
+   "id": "q15",
+   "type": "paraphrase",
+   "query": "Are there machines that carry meals around the student area?",
+   "rag_answer": "According to Article 1, the delivery robots at Verne university campus are 56-wheeled and travel at a walking pace, using cameras and sensors to avoid people and climb kerbs. [1]",
+   "llm_answer": "Yes, some schools and universities have implemented meal delivery systems, where machines or automated systems are used to carry meals to students in the student area. These systems often use a combination of conveyor belts, robotic arms, and automated storage and retrieval systems to efficiently deliver food to students. Examples of such systems include automated food carts and robotic kitchen assistants.",
+   "rag_abstained": false,
+   "llm_abstained": false,
+   "rag_seconds": 13.924597500008531,
+   "llm_seconds": 10.01884809997864,
+   "sources": [
+    "doc-029",
+    "doc-005",
+    "doc-025",
+    "doc-026"
+   ],
+   "rag_fact_recall": 1.0,
+   "llm_fact_recall": 1.0,
+   "source_hit": true
+  },
+  {
+   "id": "q16",
+   "type": "paraphrase",
+   "query": "What do the gaps in the picture of dust around a young star reveal?",
+   "rag_answer": "The gaps in the picture of dust around a young star reveal the presence of at least three giant planets that are carving out the gaps. [1]",
+   "llm_answer": "The gaps in the picture of dust around a young star reveal the presence of a protostar, which is a massive cloud of gas and dust that collapses under its own gravity to form a star. As the star forms, it compresses the dust into a disk shape, with the innermost part being the protostar. The gaps in the dust indicate that the protostar is still in the process of forming, with material being accreted onto its surface.",
+   "rag_abstained": false,
+   "llm_abstained": false,
+   "rag_seconds": 7.003508200054057,
+   "llm_seconds": 12.95679890003521,
+   "sources": [
+    "doc-037",
+    "doc-038",
+    "doc-036",
+    "doc-035"
+   ],
+   "rag_fact_recall": 1.0,
+   "llm_fact_recall": 0.0,
+   "source_hit": true
+  },
+  {
+   "id": "q17",
+   "type": "multi",
+   "query": "What strikes or labour disputes happened around Port Calder?",
+   "rag_answer": "The strikes or labour disputes mentioned in the articles around Port Calder are:\n\n* A two-week dock workers' strike at Port Calder, estimated to cost exporters 600 million marks in delayed shipments [1].\n* A three-day strike by rail freight workers at the Northern Rail terminal, demanding a 9 percent night-shift supplement and the reversal of planned staffing cuts [3].\n* Drone sightings halted flights at Port Calder airport for three hours on Saturday evening, affecting 9,000 passengers and requiring the installation of a radar system to detect small drones [4].",
+   "llm_answer": "Port Calder, a small town in Western Australia, has experienced labor disputes in the past. The town has been a site of labor strikes, including a 1981 dispute involving the Port of Fremantle and the Port of Port Calder, which led to the closure of the port for several days. The disputes have also affected the local fishing industry.",
+   "rag_abstained": false,
+   "llm_abstained": false,
+   "rag_seconds": 31.178088700049557,
+   "llm_seconds": 10.289254000061192,
+   "sources": [
+    "doc-013",
+    "doc-034",
+    "doc-002",
+    "doc-008"
+   ],
+   "rag_fact_recall": 1.0,
+   "llm_fact_recall": 1.0,
+   "source_hit": true
+  },
+  {
+   "id": "q18",
+   "type": "multi",
+   "query": "What plans exist to make transport greener?",
+   "rag_answer": "I don't know: the provided articles do not contain this information.",
+   "llm_answer": "Several plans exist to make transportation greener, including the development of electric and self-driving vehicles, which could reduce emissions and improve safety. Governments and companies are also investing in renewable energy sources, such as solar and wind power, to power transportation systems. Additionally, initiatives like congestion pricing and low-emission zones are being implemented in cities worldwide to encourage the use of cleaner modes of transportation.",
+   "rag_abstained": true,
+   "llm_abstained": false,
+   "rag_seconds": 0.01428280002437532,
+   "llm_seconds": 11.21666669996921,
+   "sources": [
+    "doc-009",
+    "doc-029",
+    "doc-001",
+    "doc-020"
+   ],
+   "rag_fact_recall": 0.0,
+   "llm_fact_recall": 0.0,
+   "source_hit": true
+  },
+  {
+   "id": "q19",
+   "type": "multi",
+   "query": "What happened at or near the Hallin steelworks?",
+   "rag_answer": "According to Article 1, the Hallin steelworks trial of hydrogen-powered locomotives began with two engines replacing diesel units on a 14-kilometre private railway. [1]",
+   "llm_answer": "The Hallin steelworks, located in Hallin, Finland, was a steel production facility that operated from 1958 to 1999. During its operation, the site was the site of significant environmental and health concerns, including pollution from the steel production process and the release of toxic chemicals into the air and water. The site was eventually closed due to these environmental issues and has since been redeveloped for other uses.",
+   "rag_abstained": false,
+   "llm_abstained": false,
+   "rag_seconds": 8.328986300039105,
+   "llm_seconds": 12.30014609999489,
+   "sources": [
+    "doc-020",
+    "doc-018",
+    "doc-040",
+    "doc-006"
+   ],
+   "rag_fact_recall": 1.0,
+   "llm_fact_recall": 0.0,
+   "source_hit": true
+  },
+  {
+   "id": "q20",
+   "type": "multi",
+   "query": "Which discoveries came from the Calder Institute?",
+   "rag_answer": "There is no mention of the Calder Institute in any of the articles provided. The articles discuss the Port Calder FC, Harbor Line high-speed railway, City approves 45,000-seat stadium on the harbour, and New signalling system cuts delays on the commuter network.",
+   "llm_answer": "I couldn't find any information on a \"Calder Institute\" that would suggest it has made significant discoveries. It's possible that you may be thinking of the University of Edinburgh's Calder Institute, which is a research institute that focuses on the history of medicine and the history of science. If you could provide more context or clarify which discoveries you are referring to, I may be able to provide a more accurate answer.",
+   "rag_abstained": false,
+   "llm_abstained": false,
+   "rag_seconds": 19.976125999935903,
+   "llm_seconds": 17.751135899918154,
+   "sources": [
+    "doc-032",
+    "doc-001",
+    "doc-034",
+    "doc-003"
+   ],
+   "rag_fact_recall": 0.0,
+   "llm_fact_recall": 0.0,
+   "source_hit": false
+  },
+  {
+   "id": "q21",
+   "type": "unanswerable",
+   "query": "What is the recipe for sourdough bread?",
+   "rag_answer": "I don't know: the provided articles do not contain this information.",
+   "llm_answer": "To make sourdough bread, you'll need a starter culture, flour, water, salt, and sometimes additional ingredients like sugar or honey. Mix the starter with flour and water to create a dough, then let it rise for several hours before shaping and baking it in a hot oven. The resulting bread will have a tangy, slightly sour flavor and a chewy texture.",
+   "rag_abstained": true,
+   "llm_abstained": false,
+   "rag_seconds": 0.016916600055992603,
+   "llm_seconds": 11.090334300068207,
+   "sources": [
+    "doc-005",
+    "doc-038",
+    "doc-026",
+    "doc-039"
+   ]
+  },
+  {
+   "id": "q22",
+   "type": "unanswerable",
+   "query": "Who is the current president of France?",
+   "rag_answer": "I don't know: the provided articles do not contain this information.",
+   "llm_answer": "As of my knowledge cutoff in 2023, the current President of France is Emmanuel Macron. However, please note that this information may have changed since then.",
+   "rag_abstained": true,
+   "llm_abstained": false,
+   "rag_seconds": 0.015429200022481382,
+   "llm_seconds": 5.1631252999650314,
+   "sources": [
+    "doc-031",
+    "doc-030",
+    "doc-037",
+    "doc-021"
+   ]
+  },
+  {
+   "id": "q23",
+   "type": "unanswerable",
+   "query": "How many goals did the national team score at last year's World Cup?",
+   "rag_answer": "I don't know: the provided articles do not contain this information.",
+   "llm_answer": "I'm not aware of the specific details of the 2022 World Cup, including the number of goals scored by the national teams. However, I can tell you that the 2022 FIFA World Cup was held in Qatar and took place from November 20, 2022, to December 18, 2022. If you're looking for information on the 2022 World Cup, I recommend checking the official FIFA website or other reliable sports news sources for the most accurate and up-to-date information.",
+   "rag_abstained": true,
+   "llm_abstained": true,
+   "rag_seconds": 0.01762339996639639,
+   "llm_seconds": 14.72047910001129,
+   "sources": [
+    "doc-032",
+    "doc-031",
+    "doc-035",
+    "doc-009"
+   ]
+  },
+  {
+   "id": "q24",
+   "type": "unanswerable",
+   "query": "What is the boiling point of mercury?",
+   "rag_answer": "I don't know: the provided articles do not contain this information.",
+   "llm_answer": "The boiling point of mercury is 356.73 degrees Celsius (674.11 degrees Fahrenheit) at standard atmospheric pressure.",
+   "rag_abstained": true,
+   "llm_abstained": false,
+   "rag_seconds": 0.014243000070564449,
+   "llm_seconds": 4.081020399928093,
+   "sources": [
+    "doc-036",
+    "doc-038",
+    "doc-037",
+    "doc-017"
+   ]
+  },
+  {
+   "id": "q25",
+   "type": "unanswerable",
+   "query": "How much did the metro extension in Moscow cost?",
+   "rag_answer": "I don't know: the provided articles do not contain this information.",
+   "llm_answer": "The metro extension in Moscow, which opened in 2010, was estimated to have cost around 1.5 trillion rubles (approximately $19 billion USD).",
+   "rag_abstained": true,
+   "llm_abstained": false,
+   "rag_seconds": 0.016692899982444942,
+   "llm_seconds": 5.292134499992244,
+   "sources": [
+    "doc-004",
+    "doc-002",
+    "doc-001",
+    "doc-003"
+   ]
+  },
+  {
+   "id": "q26",
+   "type": "unanswerable",
+   "query": "What interest rate did the Bank of Japan set this month?",
+   "rag_answer": "The Bank of Japan did not set an interest rate this month. According to the articles, the Bank of Japan's main interest rate was lowered by 0.25 percentage points to 3.75 percent, the first cut in two years, as stated in article [1]. [1]",
+   "llm_answer": "I don't have real-time access to current market data or the Bank of Japan's current interest rate decisions. However, I can tell you that the Bank of Japan typically sets interest rates to manage inflation and maintain economic growth. If you're looking for the most up-to-date information, I recommend checking the Bank of Japan's official website or reputable financial news sources.",
+   "rag_abstained": false,
+   "llm_abstained": false,
+   "rag_seconds": 18.839434399968013,
+   "llm_seconds": 16.328332100063562,
+   "sources": [
+    "doc-012",
+    "doc-011",
+    "doc-014",
+    "doc-036"
+   ]
+  }
+ ],
+ "threshold": 0.34731654822826385,
+ "model": "llama3.2:1b",
+ "retrieval_mode": "vector"
+}

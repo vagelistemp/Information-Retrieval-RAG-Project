@@ -1,0 +1,32 @@
+[project]
+name = "ir-rag"
+version = "0.1.0"
+description = "Retrieval-augmented generation over news articles: Transformer embeddings, BM25 + FAISS hybrid retrieval, LangChain and Ollama"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Evangelos Tempelopoulos" }]
+dependencies = [
+  "langchain-core>=0.3.60,<0.4",
+  "langchain-community>=0.3.24,<0.4",
+  "langchain-ollama>=0.3.3,<0.4",
+  "langchain-text-splitters>=0.3.8,<0.4",
+  "faiss-cpu>=1.11",
+  "transformers>=4.52",
+  "torch>=2.7",
+  "numpy<2.3",
+  "ollama>=0.4",
+]
+
+[project.scripts]
+ir-rag = "ir_rag.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+ir_rag = ["resources/*.jsonl", "resources/*.json"]

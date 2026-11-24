@@ -1,0 +1,12 @@
+{
+ "documents": 4076,
+ "empty_articles": 0,
+ "max_article_chars": 89506,
+ "original_reader_error": null,
+ "chunks": 30230,
+ "chunks_starting_with_period": 23663,
+ "share_chunks_starting_with_period": 0.7827654647700959,
+ "new_chunker_chunks": 30221,
+ "new_chunker_chunks_starting_with_period": 32,
+ "seconds": 2.4
+}
